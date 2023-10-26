@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "cloud-girls-store-app",
+  "private_key_id": "b572a810b531bdca9f55b7f3efe73466971e3fa4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCnuEif1aCuiKCp\noD8EzICsuQxK9Si+haCJxBn5qUIZ6BR1rcAFrCzJ+AiPzWVhFpRCl3bZGzfzF5pz\nw7JqN+7QQbB4DiwWrZt6bX0sG4ME6VEyeH28e07MozzdKm84IGdtERfo8oMzie7+\nxBaU666auC2catDPwamkQWZmNApf+R3lDhcJ8x4TgpHBk9e1Ar9MVuV6QGNu5gXY\nPdYkNCR3tthhYpJtLrwJpWL/4sBcGWRdhdEMSRX+wOhblSEo+KJGs1+gXI/ky4+E\nj0tvuqrVRtX5EuNHQSQBj4N2b/shl7aMuQNN7XQyL6roJsboe9LVrtQCQpJIEc9N\naZu6/KenAgMBAAECggEAGc59Pjq8sp5LOk5x4+cjlXATuCTo1Afzn78Q0B1/EkVn\ngIPvm+/WJG2Jw7ay9rFmtqhfnSBXB4yGM3HVLgrVMC4rXQ2xMvwbhEb8j6DcFBFi\ncQWhMzM1+L7VSqKQ4m35/Ao5R5qpHXEH2SOK5fctspjMS9kTsCP4WlHF08wGHKYT\n5TZU0YkNWz58j6ALNMupZ7F+ORbb7e4ihaSsAShZOTLDu6dtoTt13ii0JzCBI/oM\nWojo6FIIJ5i475KxuZFpqyKORWREebMlIWhB06HKvrvd/fJJHvxSZCGvBrpIRb/K\nNj8PgCSLmJUBkOwnHoW0uLqMoXowoLcit0aEWvNXQQKBgQDsZj7mbMYJZeeMTAe4\nZ2nS0WlZ2ET0lQpLLS0f1IhmvTnl4CHxFtB1lBsUjLNCQenf2ipYpib0an79VGrG\nx6dyjEKBS2oWA8Dixf1+QxJFEHZDBxvTl6AoUxOIIsBlgNSCRnqD7NGH3uVHkaVJ\np1igeZrwrV7W3iPjzk9nqCSs2QKBgQC1oENo39hRMVDlnxCRuawPbcE46G2lxJUk\nfF/GgyVvf31Ub7TEdLQA9bqViRpcyFv8oOAa18qV6SDm22h3hHlrHo9//vlVea0t\n/+46ixsv1YDxVn1UgK1wPvvZzlJJxYVc8WuKQ9zEfYTTF5rF/uhrkgSFGGXCpsMU\n3dB9WnEofwKBgEV3PiCD8iWs1j+5z8L2UHhspOKL1KdybFXu7oWd9H8MN8k+9Xpc\n0+DZJqQBPGPJ7qmi+DKYkHXeHXbfqYjD/oaAhMJtoLzbWYDJ4VWK7AFzduz3V8vz\nkFKJJwIoBBVPqCKoBzRhEKk2bHV9bO6ZyEdPtKHosCe/mxhD9b1mAXDxAoGASxb6\nJ6a8ET1ZW8W6nPTtjOdshjGZ+3ndy1rcYf8ggAtubnVMgBhbvzXYsTAgxRFU7oo4\nfQCQUhAzOR6m/xq29DGLVHi+7rbCgY0ZGf0e/VTA3YZLhJ86lXiEuVTSsotGCtoJ\nAv3xjQ7z1i4hIBC2WJri4X/numUlrD/Uja7Rr9MCgYA6+fYMDbStnmcfESYAJHyB\nj5PUUNGpEw9Jk1elE1Ro2EZVsy/sJmfC5foIeComEvnVD7t2AcwEafJ6Cut9Mbsx\nUCrZhT7vz2J+uSZBxIY9mozyJXXD7sh0+chrN9JCjgxI1dH7NhsRjOh4OyafruKZ\ns0EOlvC6XvedOzjGifuPiA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-j3fhn@cloud-girls-store-app.iam.gserviceaccount.com",
+  "client_id": "104597053308609307953",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-j3fhn%40cloud-girls-store-app.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

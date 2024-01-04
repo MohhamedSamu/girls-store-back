@@ -26,7 +26,7 @@ router.post("/publish", async (req, res) => {
   const batch = db.db.batch();
   data.forEach((product) => {
     const tempProdRef = db.product.doc(product);
-    batch.set(tempProdRef, {published: true});
+    batch.update(tempProdRef, {published: true});
   });
   let retMsg = await batch.commit();
   res.send({msg: "Operation post completed", return: retMsg});

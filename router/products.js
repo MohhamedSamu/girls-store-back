@@ -19,6 +19,19 @@ router.post("/", async (req, res) => {
   res.send({msg: "Operation post completed", return: retMsg});
 });
 
+router.post("/publish", async (req, res) => {
+  const data = req.body
+  
+  // Get a new write batch
+  const batch = db.batch();
+  data.forEach((product) => {
+    const tempProdRef = db.product.doc(product);
+    batch.set(tempProdRef, {published: true});
+  });
+  let retMsg = await batch.commit();
+  res.send({msg: "Operation post completed", return: retMsg});
+});
+
 router
   .route("/:id")
   .get(async (req, res) => {

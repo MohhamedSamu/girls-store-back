@@ -23,7 +23,7 @@ router.post("/publish", async (req, res) => {
   const data = req.body
   
   // Get a new write batch
-  const batch = db.batch();
+  const batch = db.db.batch();
   data.forEach((product) => {
     const tempProdRef = db.product.doc(product);
     batch.set(tempProdRef, {published: true});

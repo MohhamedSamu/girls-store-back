@@ -9,6 +9,7 @@ initializeApp({
 
 const db = getFirestore();
 
+module.exports.db = db
 module.exports.category = db.collection('categories')
 module.exports.delivery = db.collection('delivery')
 module.exports.deliveryTeam = db.collection('deliveryTeam')

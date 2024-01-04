@@ -30,6 +30,8 @@ router.post("/publish", async (req, res) => {
     if (!doc.exists) {
       console.log('No such document!');
     } else {
+      console.log('doc.data().timesPublished', doc.data().timesPublished);
+      console.log('doc.data().timesPublished++', doc.data().timesPublished++);
       batch.update(tempProdRef, {published: true, timesPublished: doc.data().timesPublished++});
     }
   });

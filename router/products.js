@@ -26,7 +26,7 @@ router.post("/publish", async (req, res) => {
   const batch = db.db.batch();
   data.forEach(async(product) => {
     const tempProdRef = db.product.doc(product);
-    const doc = await cityRef.get();
+    const doc = await tempProdRef.get();
     if (!doc.exists) {
       console.log('No such document!');
     } else {

@@ -26,14 +26,7 @@ router.post("/publish", async (req, res) => {
   const batch = db.db.batch();
   data.forEach(async(product) => {
     const tempProdRef = db.product.doc(product);
-    const doc = await tempProdRef.get();
-    if (!doc.exists) {
-      console.log('No such document!');
-    } else {
-      console.log('doc.data().timesPublished', doc.data().timesPublished);
-      console.log('doc.data().timesPublished++', doc.data().timesPublished++);
-      batch.update(tempProdRef, {published: true, timesPublished: doc.data().timesPublished++});
-    }
+    batch.update(tempProdRef, {published: true});
   });
   let retMsg = await batch.commit();
   res.send({msg: "Operation post completed", return: retMsg});

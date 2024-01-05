@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const cloudinaryService = require("../services/cloudinary");
 
 const db = require('../data-config.js')
 
@@ -16,9 +15,6 @@ router.get("/", async (req, res) => {
 
 router.post("/", async (req, res) => {
   const data = req.body
-  // let folderName = "preset_products";
-  // let uploadPic = await cloudinaryService.uploadCloudinaryImageUrl(folderName, req.body.picture);
-  // data.picture = uploadPic.secure_url;
   let retMsg = await db.product.add(data)
   res.send({msg: "Operation post completed", return: retMsg});
 });

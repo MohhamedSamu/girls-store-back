@@ -20,6 +20,7 @@ const postTemplatesRouter = require("./router/postTemplates.js")
 const productsRouter = require("./router/products.js")
 const publicationsDayRouter = require("./router/publicationDay.js")
 const publicationsPostRouter = require("./router/publicationPost.js")
+const configRouter = require("./router/config.js")
 
 app.use("/categories", categoriesRouter)
 app.use("/delivery", deliveryRouter)
@@ -30,6 +31,7 @@ app.use("/postTemplates", postTemplatesRouter)
 app.use("/products", productsRouter)
 app.use("/publicationDays", publicationsDayRouter)
 app.use("/publicationPosts", publicationsPostRouter)
+app.use("/configs", configRouter)
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {

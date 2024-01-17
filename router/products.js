@@ -32,6 +32,32 @@ router.post("/publish", async (req, res) => {
   res.send({msg: "Operation post completed", return: retMsg});
 });
 
+router.post("/select", async (req, res) => {
+  const data = req.body
+  
+  // Get a new write batch
+  const batch = db.db.batch();
+  data.forEach(async(product) => {
+    const tempProdRef = db.product.doc(product);
+    batch.update(tempProdRef, {selected: true});
+  });
+  let retMsg = await batch.commit();
+  res.send({msg: "Operation post completed", return: retMsg});
+});
+
+router.post("/unSelect", async (req, res) => {
+  const data = req.body
+  
+  // Get a new write batch
+  const batch = db.db.batch();
+  data.forEach(async(product) => {
+    const tempProdRef = db.product.doc(product);
+    batch.update(tempProdRef, {selected: false});
+  });
+  let retMsg = await batch.commit();
+  res.send({msg: "Operation post completed", return: retMsg});
+});
+
 router
   .route("/:id")
   .get(async (req, res) => {

@@ -1,6 +1,16 @@
 const express = require("express");
 const router = express.Router();
 
+const cloudinary = require('cloudinary');
+
+cloudinary.v2.config({
+  cloud_name: 'dae0fnrdt',
+  api_key: '631496324881983',
+  api_secret: 'pmzZUAc4JvNJp-h0lLktvSzlPUA',
+  secure: true,
+});
+
+
 const db = require('../data-config.js')
 
 router.get("/test", (req, res) => {
@@ -17,6 +27,17 @@ router.post("/", async (req, res) => {
   const data = req.body
   let retMsg = await db.product.add(data)
   res.send({msg: "Operation post completed", return: retMsg});
+});
+
+router.post("/deleteImages", async (req, res) => {
+  const data = req.body
+
+  cloudinary.v2.api
+  .delete_resources(data, 
+    { type: 'upload', resource_type: 'image' })
+  .then((retMsg)=>{
+    res.send({msg: "Operation post completed", return: retMsg});
+  });
 });
 
 router.post("/publish", async (req, res) => {

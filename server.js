@@ -21,6 +21,11 @@ const productsRouter = require("./router/products.js")
 const publicationsDayRouter = require("./router/publicationDay.js")
 const publicationsPostRouter = require("./router/publicationPost.js")
 const configRouter = require("./router/config.js")
+const budgetRouter = require("./router/budget.js")
+const clientsRouter = require("./router/clients.js")
+const packagesRouter = require("./router/packages.js")
+const transactionsRouter = require("./router/transactions.js")
+const walletRouter = require("./router/wallet.js")
 
 app.use("/categories", categoriesRouter)
 app.use("/delivery", deliveryRouter)
@@ -32,6 +37,11 @@ app.use("/products", productsRouter)
 app.use("/publicationDays", publicationsDayRouter)
 app.use("/publicationPosts", publicationsPostRouter)
 app.use("/configs", configRouter)
+app.use("/budget", budgetRouter)
+app.use("/clients", clientsRouter)
+app.use("/packages", packagesRouter)
+app.use("/transactions", transactionsRouter)
+app.use("/wallet", walletRouter)
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
